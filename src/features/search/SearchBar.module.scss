@@ -1,0 +1,32 @@
+// src/features/search/SearchBar.module.scss
+
+.searchContainer {
+  width: 100%;
+  max-width: 600px; // Keeps it from stretching too far on desktop
+  margin: 20px 0 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 14px 24px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05); // Subtle glass effect
+  border: 1px solid rgba(168, 85, 247, 0.3); // Faint purple border
+  border-radius: 50px; // Pill shape is very modern
+  outline: none;
+  transition: all 0.3s ease;
+  
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #a855f7; // Bright purple on focus
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.2); // Purple glow
+    transform: translateY(-2px); // Subtle "lift" effect
+  }
+}
